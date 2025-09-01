@@ -1,0 +1,50 @@
+{
+    "devDependencies": {
+        "@babel/core": "^7.21.8",
+        "@babel/preset-env": "^7.21.5",
+        "babel-loader": "^9.1.2",
+        "css-loader": "^6.7.4",
+        "filemanager-webpack-plugin": "^8.0.0",
+        "html-webpack-plugin": "^5.5.1",
+        "jstransformer-markdown-it": "^3.0.0",
+        "mini-css-extract-plugin": "^2.7.5",
+        "postcss-loader": "^7.3.0",
+        "postcss-preset-env": "^8.4.1",
+        "pug": "^2.0.4",
+        "pug-loader": "^2.4.0",
+        "style-loader": "^3.3.3",
+        "webpack": "^5.82.1",
+        "webpack-cli": "^5.1.1",
+        "webpack-dev-server": "^4.15.0"
+    },
+    "dependencies": {
+        "copy-webpack-plugin": "^11.0.0",
+        "css-minimizer-webpack-plugin": "^5.0.1",
+        "eslint-webpack-plugin": "^4.0.1",
+        "file-loader": "^6.2.0",
+        "pcss": "^1.0.0",
+        "pcss-loader": "^1.0.3",
+        "stylelint-webpack-plugin": "^4.1.1",
+        "terser-webpack-plugin": "^5.3.8"
+    },
+    "name": "testcelement",
+    "description": "макет - https://www.figma.com/design/dQ3g5eagRLI53vKOsVp88E/de-landingpage_2(сщзн)?node-id=0-1&p=f&t=Sdhg8w79GCdIHZRs-0",
+    "version": "1.0.0",
+    "main": "webpack.config.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "webpack serve --config frontend/webpack.config.js --open --mode development",
+        "build": "webpack --config frontend/webpack.config.js --mode production"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/XeniHong/testElement.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/XeniHong/testElement/issues"
+    },
+    "homepage": "https://github.com/XeniHong/testElement#readme"
+}

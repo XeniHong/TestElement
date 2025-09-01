@@ -1,0 +1,70 @@
+.headerBackground {
+  --headerPosition: absolute;
+
+  position: headerPosition;
+
+  &__man {
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+    animation: animaMan 4s linear infinite alternate;
+  }
+
+  @keyframes animaMan {
+    from {
+      bottom: 10px;
+    }
+    to {
+      bottom: 50px;
+    }
+  }
+}
+
+.header__women {
+  position: absolute;
+  bottom: 120px;
+  right: 0px;
+}
+.header__women :hover {
+  transform: translateX(-30px);
+  transition-duration: 2s;
+  transition-property: transform;
+  transition-timing-function: linear;
+}
+
+.header__content {
+  position: absolute;
+  bottom: 100px;
+  left: 150px;
+}
+.header__content :hover {
+  transform: translateX(-30px);
+  transition-duration: 2s;
+  transition-property: transform;
+  transition-timing-function: linear;
+}
+
+.header__groupM {
+  position: absolute;
+  bottom: 390px;
+  right: 90px;
+}
+.header__groupM:hover {
+  transform: translateY(30px);
+  transition-duration: 2s;
+  transition-property: transform;
+  transition-timing-function: linear;
+}
+
+.header__home {
+  position: absolute;
+  bottom: 280px;
+  right: 120px;
+}
+.header__home :hover {
+  transform: translateX(30px);
+  transform: translateY(-30px);
+  transition-duration: 2s;
+  transition-property: transform;
+  transition-timing-function: linear;
+}
