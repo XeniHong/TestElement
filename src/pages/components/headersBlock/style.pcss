@@ -1,18 +1,22 @@
 @import "../../../styles/palette.pcss";
 @import "headerImage/image.pcss";
 
-
-.header {
+.header__wrapper {
   --headerBgColor: var(--colorWhite);
   --headerBurgerBtnColor: var(--colorBurgerButton);
   --headerTop: 2.5rem;
+  --headerBackground: var(--colorLightkBlue);
 
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-  }
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 90px;
+
+  background: linear-gradient(
+    to top,
+    var(--headerBackground) 10%,
+    var(--headerBgColor)
+  );
 }
-
 
 .header__navbar {
   height: 80px;
@@ -99,16 +103,16 @@
   transform: translate(-50%, 0%) rotate(-45deg);
 }
 
-.header__blocks{
+.header__blocks {
   display: flex;
   flex-direction: row;
 }
-.header__textBlock{
+.header__textBlock {
   padding: 100px 0 0 210px;
   width: 510px;
 }
 
-.header__images{
+.header__images {
   position: absolute;
   right: 20px;
   top: 150px;

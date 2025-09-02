@@ -1,0 +1,108 @@
+.headerBackground {
+  /* --headerPosition: absolute;
+  position: var(--headerPosition); */
+}
+
+/*man*/
+.headerBackground__man {
+  position: absolute;
+  bottom: 10px;
+  left: 50px;
+  animation: animaMan 4s linear infinite alternate;
+}
+
+@keyframes animaMan {
+  from {
+    bottom: 10px;
+  }
+  to {
+    bottom: 50px;
+  }
+}
+
+/*woman*/
+.headerBackground__women {
+  position: absolute;
+  bottom: 120px;
+  right: 0px;
+
+  animation: animaWoman 3s linear infinite alternate;
+}
+
+@keyframes animaWoman {
+  from {
+    bottom: 120px;
+  }
+  to {
+    bottom: 140px;
+  }
+}
+.headerBackground__women :hover {
+  transform: translateX(-30px);
+  transition-duration: 2s;
+  transition-property: transform;
+  transition-timing-function: linear;
+}
+
+/*content*/
+.headerBackground__content {
+  position: absolute;
+  bottom: 100px;
+  left: 150px;
+}
+
+.headerBackground__content :hover {
+  transform: translateX(-30px);
+  transition-duration: 2s;
+  transition-property: transform;
+  transition-timing-function: linear;
+}
+
+/*groupM*/
+.headerBackground__groupM {
+  position: absolute;
+  bottom: 390px;
+  right: 90px;
+  animation: animagroupM 2s linear alternate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animagroupM {
+  from {
+    bottom: 390px;
+  }
+  to {
+    bottom: 350px;
+  }
+}
+.headerBackground__groupM:hover {
+  transform: translateY(30px);
+  transition-duration: 2s;
+  transition-property: transform;
+  transition-timing-function: linear;
+}
+
+/*hpme*/
+.headerBackground__home {
+  position: absolute;
+  bottom: 280px;
+  right: 120px;
+  animation: animaHome 2s linear alternate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animaHome {
+  from {
+    bottom: 250px;
+  }
+  to {
+    bottom: 290px;
+  }
+}
+.headerBackground__home :hover {
+  transform: translateX(30px);
+  transform: translateY(-30px);
+  transition-duration: 2s;
+  transition-property: transform;
+  transition-timing-function: linear;
+}
