@@ -4,5 +4,8 @@ mixin clientMixin(icon, name, link)
     if icon
       .client__svg
         svg(src=icon, alt=title )
+      a.client__link= link
     if name
-      p.client__text= name
+      a(href=link)
+        p.client__text= name
+

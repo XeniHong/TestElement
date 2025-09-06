@@ -1,0 +1,26 @@
+.btn__style {
+  --btncolor: var(--colorBlue);
+  --btnWidht: 220px;
+  --btnHeight: 56px;
+  --btnColor: var(--colorWhite);
+  --btnFontSize: 16px;
+  --btnRadius: 8px;
+  --btnMargin: 50px 0 30px;
+  width: var(--btnWidht);
+  height: var(--btnHeight);
+  background-color: var(--btncolor);
+  color: var(--btnColor);
+  font-size: var(--btnFontSize);
+  border: solid 1px var(--btncolor);
+  border-radius: var(--btnRadius);
+  cursor: pointer;
+  transition: background-color 2s ease;
+  margin: var(--btnMargin);
+}
+
+.btn__style:hover{
+   --btncolor: var(--colorTextH1);
+  background-color: var(--btncolor);
+  border: solid 1px var(--btncolor);
+  transition: background-color 2s ease;
+}

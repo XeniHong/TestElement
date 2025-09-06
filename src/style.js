@@ -14,3 +14,4 @@ import "./shared/utils/card/style.pcss";
 import "./pages/components/clientBlock/style.pcss";
 import "./shared/utils/clientLogo/style.pcss";
 import "./pages/components/footerBlock/style.pcss";
+import "./shared/utils/button/style.pcss";
