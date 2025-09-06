@@ -28,9 +28,25 @@ body {
 }
 
 .container--isDark{
-  background-color: var(--colorDarkBlue);
-  border-top-right-radius: 200px;
+  position: relative;
 }
+.container--isDark:before,  .container--isDark:after{
+  z-index: -1;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  top: 0;
+}
+.container--isDark:before {
+  left: 0;
+  background-color: var(--colorDarkBlue);
+}
+.container--isDark:after{
+  right: 0;
+  background-color: var(--colorBlue);
+}
+
 
 a {
   text-decoration: none;

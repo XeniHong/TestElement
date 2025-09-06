@@ -11,18 +11,36 @@ include ../../../shared/utils/button/buttonMixin.pug
 
 .footer__basement
   .footer__afrianska
-    logo afrianska
-    |A.   
-    |T.
-    |E.
-  .footer__aboutUs
-    a about us
-    a what
-    a progest
-    a how it work
-  .footer__followUs
-    a insts
-    a facebook
-    a linked
-    a youtube
+    .footer__logo
+      a(href="http://localhost:9000/")
+        include ../../../assets/Icon/logoIcon.svg
+      h3 Afrianska
+    .footer__feedback
+      li A.
+        a Lorem ipsum dolor sit amet, consectetur adipisicing elit
+      li T.
+        a(href="tel:+62-812-7313-4321") +62-812-7313-4321
+      li E
+        a(href="mailto:hello.afrian@gmail.com") hello.afrian@gmail.com
+  .footer__about
+    p About US
+    li
+      a(href="#About") About
+    li
+      a(href="#Do") What We Do
+    li
+      a(href="#Project") Project
+    li
+      a(href="#How") How It Work With Us
+  .footer__follow
+    p Follow US
+    li
+      a(href="#instagram") Instagram
+    li
+      a(href="#Facebook") Facebook
+    li
+      a(href="#Linkedln") Linkedln
+    li
+      a(href="#YpuTube") YouTube
 .footer__copyright
+  |2019 © Afrianska. All right reserved
