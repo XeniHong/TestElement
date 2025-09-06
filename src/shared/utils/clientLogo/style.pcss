@@ -1,0 +1,25 @@
+.client__block {
+  width: 250px;
+  height: 100px;
+  align-items: center;
+  text-align: center;
+}
+
+.client__block:nth-child(odd){
+  border-right: solid 1px var(--colorWhite);
+}
+
+.client__block:nth-child(3n){
+  border-right: solid 1px var(--colorWhite);
+  border-left: solid 1px var(--colorWhite);
+}
+
+.client__block:nth-child(n+5){
+  border-top: solid 1px var(--colorWhite);
+}
+
+.client__block:last-child{
+  background-color: var(--colorBurgerButton);
+}
+
+

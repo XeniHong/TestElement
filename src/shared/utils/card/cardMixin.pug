@@ -1,0 +1,11 @@
+mixin cardMixin(icon, title, description, link)
+  .card__block
+    .card__icons
+      .card__svg
+        svg(src=icon, alt=title )
+    .card__text
+      h3.card__title= title
+      p.card__descr= description
+      .card__more
+        a.card__href(href=link) Learn more
+        .card__arrow

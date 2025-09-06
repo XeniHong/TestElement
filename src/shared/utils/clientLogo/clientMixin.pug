@@ -1,0 +1,8 @@
+//- Если нету иконки то она не выводиться, то же самое с именем
+mixin clientMixin(icon, name, link)
+  .client__block
+    if icon
+      .client__svg
+        svg(src=icon, alt=title )
+    if name
+      p.client__text= name

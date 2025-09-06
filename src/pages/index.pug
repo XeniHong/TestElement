@@ -11,52 +11,18 @@ html(lang= 'ru')
 
       main
         section.container
-            .container__wrapper
-                h1.container__tittle Практическое обучение. Базовая часть
+            .container__wrapper.talk__wrapper#talk
+               include components/talkBlock/talkBlock.pug
 
-        section.container.container--isDark
-            .container__wrapper
-                h2.container__tittle Бегунок
-
-
-        section.container
-            .container__wrapper
-                h2.container__tittle Слайдер
-
-
-        section.container.container--isDark
-            .container__wrapper
-                h2.container__tittle  Карта
-
-        section.container.container--isDark
-            .container__wrapper
-                h2.container__tittle  Карта
-
-        section.container.container--isDark
-            .container__wrapper
-                h2.container__tittle  Карта
-
-        section.container.container--isDark
-            .container__wrapper
-                h2.container__tittle  Карта
-
-        section.container.container--isDark
-            .container__wrapper
-                h2.container__tittle  Карта
-
-        section.container.container--isDark
-            .container__wrapper
-                h2.container__tittle  Карта
-
-        section.container.container--isDark
-            .container__wrapper
-                h2.container__tittle  Карта
+        section.container.container--isBlue
+            .client__wrapper.container__wrapper#client
+                include components/clientBlock/clientBlock.pug
 
 
 
-
-
-    foooter
+    foooter.container--isDark
+        .section__wrapper.footer__wrapper#help
+            include components/footerBlock/footer.pug
 
 
 
