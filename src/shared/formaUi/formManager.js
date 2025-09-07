@@ -80,7 +80,7 @@ export const formManager = (() => {
 
       if (!validate()) return;
 
-      // или https: //reqres.in/api/users или http://localhost:9000/Post
+      // или https: //reqres.in/api/users или http://localhost:9000/Post //jsonplaceholder.typicode.com/posts"
       fetch("https://jsonplaceholder.typicode.com/posts", {
         method: "POST",
         headers: {
@@ -97,8 +97,10 @@ export const formManager = (() => {
           return response.json();
         })
         .then((data) => {
-          closeModal();
+          modalManager.closeModal();
+          scrollManager.enableScroll();
           showSuccessPopup();
+          resetForm();
         })
         .catch(() => {
           alert("Something went wrong. Please try again later.");
