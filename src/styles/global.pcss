@@ -22,15 +22,30 @@ body {
   margin: 0px auto;
 }
 
-.container--isBlue{
+@media (max-width: 1200px) {
+  .container__wrapper {
+    width: 1000px;
+    margin: 0px auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container__wrapper {
+    width: 700px;
+    margin: 0px auto;
+  }
+}
+
+.container--isBlue {
   background-color: var(--colorBlue);
   border-top-left-radius: 200px;
 }
 
-.container--isDark{
+.container--isDark {
   position: relative;
 }
-.container--isDark:before,  .container--isDark:after{
+.container--isDark:before,
+.container--isDark:after {
   z-index: -1;
   content: "";
   position: absolute;
@@ -42,13 +57,11 @@ body {
   left: 0;
   background-color: var(--colorDarkBlue);
 }
-.container--isDark:after{
+.container--isDark:after {
   right: 0;
   background-color: var(--colorBlue);
 }
 
-
 a {
   text-decoration: none;
 }
-

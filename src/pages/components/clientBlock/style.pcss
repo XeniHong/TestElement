@@ -2,7 +2,7 @@
   padding: 100px 0 120px;
 }
 
-.client__text {
+.client__description {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -10,10 +10,9 @@
   gap: 40px;
 }
 
-.client__text h2, .client__text p {
+.client__description h2, .client__description p {
   color: var(--colorWhite);
 }
-
 
 .client__grid {
   display: flex;
@@ -21,6 +20,15 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding-top: 90px;
 }
 
-
+@media (max-width: 1000px){
+.client__description {
+  display: flex;
+  gap: 20px;
+}
+.client__title{
+  width: 250px;
+}
+}

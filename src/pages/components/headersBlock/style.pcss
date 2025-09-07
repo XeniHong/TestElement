@@ -9,6 +9,7 @@
 
   display: flex;
   flex-direction: column;
+  padding-top: var(--headerTop);
   padding-bottom: 70px;
 
   background: linear-gradient(
@@ -119,3 +120,28 @@
   width: 640px;
   height: 480px;
 }
+
+@media (max-width: 1200px) {
+  .header__textBlock{
+    padding: 50px 0 0 100px;
+    width: 400px;
+  }
+.header__wrapper{
+  padding-bottom: 120px;
+}
+
+}
+
+@media (max-width: 1200px) {
+  .header__textBlock{
+    padding: 10px 0 0 100px;
+  }
+.header__icon{
+  padding: 20px 0 0 40px;
+}
+.header__text {
+  width: 250px;
+
+}
+}
+

@@ -1,21 +1,12 @@
 @import "../../../styles/palette.pcss";
 
 .talk__wrapper {
-  --headerBgColor: var(--colorWhite);
-  --headerBurgerBtnColor: var(--colorBurgerButton);
-  --headerTop: 2.5rem;
-  --headerBackground: var(--colorLightkBlue);
-
-  padding: 180px 0 90px ;
+  padding: 180px 0 90px;
 }
 
 .talk__text {
   position: absolute;
   width: 350px;
-}
-
-.talk__title{
-
 }
 
 .talk__cards {
@@ -26,13 +17,35 @@
   gap: 20px;
 }
 
-
 .card__block:nth-child(odd) {
   grid-column: 5;
-  border: 1px solid red;
+  box-shadow: -5px 3px 21px 0px rgba(0, 0, 0, 0.2);
+
 }
 .card__block:nth-child(even) {
   grid-column: 1;
-  grid-row: 2;
-  border: 1px solid red;
+  box-shadow: -5px 3px 21px 0px rgba(0, 0, 0, 0.2);
 }
+
+@media (max-width: 1000px){
+.talk__wrapper {
+  padding: 180px 0;
+}
+.talk__text {
+  width: 250px;
+}
+.talk__cards {
+  display: grid;
+  grid-template-columns: 2;
+  justify-items: center;
+  gap: 20px;
+}
+.card__block:nth-child(odd) {
+  grid-column: 2;
+
+}
+.card__block:nth-child(even) {
+  grid-column: 1;
+}
+}
+

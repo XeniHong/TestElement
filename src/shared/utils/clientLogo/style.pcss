@@ -29,7 +29,36 @@
 .client__text{
   font-size: 20px;
   font-weight: semibold;
-  padding: 30px 0 30px 40px;
+  color: var(--colorWhite);
+  padding: 30px;
+}
+
+@media (max-width: 1200px) {
+  .client__block:nth-child(odd){
+    border: none;
+  }
+  .client__block:nth-child(n+4){
+  border-top: solid 1px var(--colorWhite);
+  }
+  .client__block:nth-child(3n-1){
+  border-right: solid 1px var(--colorWhite);
+  border-left: solid 1px var(--colorWhite);
+}
+}
+
+@media (max-width: 1000px) {
+  .client__block:nth-child(n+4), .client__block:nth-child(3n-1), .client__block:nth-child(3n){
+    border-right: none;
+    border-top: none;
+    border-left: none;
+  }
+  .client__block:nth-child(even){
+  border-left: solid 1px var(--colorWhite);
+  }
+ .client__block:nth-child(n+3){
+  border-top: solid 1px var(--colorWhite);
+  }
+
 }
 
 

@@ -56,7 +56,7 @@
   font-size: 16px;
 }
 
-.footer__about{
+.footer__about, .footer__follow{
   padding-left: 100px;
 }
 
@@ -96,4 +96,28 @@ list-style: none;
   font-size: x-small;
   color: var(--colorWhite);
   padding-bottom: 30px;
+}
+
+@media (max-width: 1000px){
+.footer__letsTalk {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 0;
+  gap: 90px;
+
+  border-bottom: solid 1px var(--colorWhite);
+}
+.footer__letsText h2, .footer__letsText p {
+  width: 300px;
+}
+.footer__about, .footer__follow{
+  padding-left: 0;
+}
+.footer__afrianska{
+  width: 350px;
+}
+
+.footer__about p, .footer__follow p, .footer__about li a, .footer__follow li a{
+  font-size: 14px;
+}
 }
