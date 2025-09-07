@@ -15,3 +15,4 @@ import "./pages/components/clientBlock/style.pcss";
 import "./shared/utils/clientLogo/style.pcss";
 import "./pages/components/footerBlock/style.pcss";
 import "./shared/utils/button/style.pcss";
+import "./pages/components/forma/style.pcss";

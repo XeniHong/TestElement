@@ -1,0 +1,22 @@
+#modalOverlay.modal-overlay
+  .modal.modal__block(role='dialog' aria-modal='true' aria-labelledby='modalTitle')
+    span#modalClose.modal-close(aria-label='Close modal') &times;
+    h3#modalTitle.modal__tittle SEND US MESSAGE
+    form#contactForm.modal__forma(novalidate='')
+      .modal__fullName
+        label(for='name') Full name
+        input#name(type='text' name='name')
+        #errorName.error-message
+      .modal__email
+        label(for='email') Email
+        input#email(type='email' name='email')
+        #errorEmail.error-message
+      .modal__message
+        label(for='message') Message
+        textarea#message(name='message' rows='4')
+        #errorMessage.error-message
+      button.modal__btn(type='submit') Submit
+
+
+// Попап успешной отправки
+#successPopup.success-popup Ваше сообщение отправилось!
